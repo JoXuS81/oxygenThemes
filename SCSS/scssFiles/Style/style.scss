@@ -1,0 +1,86 @@
+/* 
+
+*****************
+TABLE OF CONTENTS
+*****************
+
+- Fonts
+- Mixins
+- Mixins, Larger Screens
+- Variables
+- Body
+ - Included Mixins
+ - Main Container
+  - Imports
+- Media Queries
+
+*/
+
+
+// FONTS
+// Carter One
+@font-face 
+{
+    font-family:"carterOneRegular";
+    src:url("../../../Fonts/carterOne/carterOneRegular.ttf");
+}
+// Luckiest Guy
+@font-face 
+{
+    font-family:"luckiestGuyRegular";
+    src:url("../../../Fonts/luckiestGuy/luckiestGuyRegular.ttf");
+}
+// Maven Pro Bold
+@font-face 
+{
+    font-family:"mavenProBold";
+    src:url("../../../Fonts/mavenPro/mavenProBold.ttf");
+}
+// Teko
+@font-face 
+{
+    font-family:"tekoRegular";
+    src:url("../../../Fonts/Teko/tekoRegular.ttf");
+}
+// MIXINS (8 Mixins)
+@mixin a
+{
+    text-decoration:none;
+}
+@mixin h1
+{
+    text-align:center;
+}
+// MIXINS (FOR RESOLUTION 1921 - 2400px)
+// MIXINS (FOR RESOLUTION 2401 - 3000px)
+// MIXINS (FOR RESOLUTION 3001 - 3750px)
+// MIXINS (FOR RESOLUTION 3751 -> ...)
+
+
+// VARIABLES
+$black:#000000;
+$grey:#adadad;
+$headerButton:#ff5F7d;
+$headerButtonHover:#f31c43;
+$headerMiddle:#515151;
+$white:#ffffff;
+
+
+// BODY
+body {
+    // MAIN CONTAINER
+    .mainContainer 
+    {
+        // IMPORTS
+        @import "../Content/section";
+    }
+}
+    // INCLUDED MIXINS
+    a
+    {
+        @include a;
+    }
+    h1
+    {
+        @include h1;
+    }

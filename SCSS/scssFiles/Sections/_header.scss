@@ -1,0 +1,835 @@
+/*
+TABLE OF CONTENTS
+*****************
+*/
+
+
+.header 
+{
+    background:url("../../../Images/Header/headerBackgroundSix.png");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:100vh;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    -webkit-background-size:cover;
+    width:100%;
+    .verticalBottom
+    {
+        bottom:0;
+        display:flex;
+        height:141px;
+        justify-content:center;
+        left:0;
+        position:absolute;
+        width:100%;
+        z-index:1;
+        .socialBottom
+        {
+            display:none;
+            a 
+            {
+                align-items:center;
+                color:$black;
+                display:flex;
+                margin:0;
+                h4 
+                {
+                    display:inline-block;
+                    font-family:tekoRegular;
+                    font-size:26px;
+                    margin:0 0 0 13px;
+                    padding:0;
+                    position:relative;
+                    top:2px;
+                }
+                img 
+                {
+                    display:inline;
+                    height:auto;
+                    width:15px;
+                }
+            }
+        }
+    }
+    .verticalMiddle 
+    {
+        height:100%;
+        left:0;
+        position:absolute;
+        top:0;
+        width:100%;
+        z-index:1;
+        .social 
+        {
+            display:inline;
+            left:0;
+            position:absolute;
+            a 
+            {
+                align-items:center;
+                color:$black;
+                display:flex;
+                margin:0 0 0 32px;
+                transform:rotate(-90deg);
+                h4 
+                {
+                    display:inline-block;
+                    font-family:tekoRegular;
+                    font-size:26px;
+                    margin:0 0 0 13px;
+                    padding:0;
+                    position:relative;
+                    top:2px;
+                }
+                img 
+                {
+                    display:inline;
+                    height:auto;
+                    width:15px;
+                }
+            }
+        }
+        .weCreate 
+        {
+            .textAndButton 
+            {
+                width:25%;
+                .button 
+                {
+                    margin:29px 0 0 0;
+                    a 
+                    {
+                        background:$headerButton;
+                        border-radius:8px;
+                        color:$white;
+                        font-family:carterOneRegular;
+                        font-size:25px;
+                        padding:20px 49px 20px 49px;
+                        &:hover 
+                        {
+                            background:$headerButtonHover;
+                        }
+                    }
+                }
+                h1 
+                {
+                    color:$headerMiddle;
+                    font-family:carterOneRegular;
+                    font-size:90px;
+                    width:100%;
+                }
+            }
+        }
+    }
+    .verticalTop
+    {
+        position:relative;
+        z-index:2;
+        .oxygen 
+        {
+            font-family:luckiestGuyRegular;
+            font-size:0px;
+            padding:141px 0 0 0;
+            .oxy 
+            {
+                color:$black;
+                display:inline-block;
+                font-size:50px;
+            }
+            .the 
+            {
+                color:$grey;
+                display:inline-block;
+                font-size:50px;
+            }
+        }
+    }
+}
+
+
+@media (max-height:400px)
+{
+    .header 
+    {
+        .verticalBottom 
+        {
+            height:106px;
+        }
+        .verticalMiddle
+        {
+            .weCreate 
+            {
+                .textAndButton 
+                {
+                    .button 
+                    {
+                        display:none !important;
+                    }
+                    h1 
+                    {
+                        display:none;
+                    }
+                }
+            }
+        }
+        .verticalTop 
+        {
+            .oxygen 
+            {
+                padding:106px 0 0 0;
+            }
+        }
+    }
+}
+
+
+@media (min-height:401px) and (max-height:600px)
+{
+    .header 
+    {
+        .verticalMiddle
+        {
+            .weCreate 
+            {
+                .textAndButton 
+                {
+                    .button 
+                    {
+                        display:none !important;
+                    }
+                    h1 
+                    {
+                        display:none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-height:601px) and (max-height:875px)
+{
+    .header 
+    {
+        .verticalMiddle
+        {
+            .weCreate 
+            {
+                .textAndButton 
+                {
+                    h1 
+                    {
+                        display:none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:275px)
+{
+    .header 
+    {
+        .verticalBottom 
+        {
+            .socialBottom 
+            {
+                display:block;
+            }
+        }
+        .verticalMiddle 
+        {
+            .social 
+            {
+                display:none;
+            }
+            .weCreate 
+            {
+                .textAndButton 
+                {
+                    width:95%;
+                    .button 
+                    {
+                        margin:22px 0 0 0;
+                        a 
+                        {
+                            border-radius:6px;
+                            font-size:19px;
+                            padding:15px 37px 15px 37px;
+                        }
+                    }
+                    h1 
+                    {
+                        font-size:38px;
+                    }
+                }
+            }
+        }
+        .verticalTop 
+        {
+            .oxygen 
+            {
+                .oxy
+                {
+                    font-size:38px;
+                }
+                .the
+                {
+                    font-size:38px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:276px) and (max-width:375px)
+{
+    .header 
+    {
+        .verticalBottom 
+        {
+            .socialBottom 
+            {
+                display:block;
+            }
+        }
+        .verticalMiddle 
+        {
+            .social 
+            {
+                display:none;
+            }
+            .weCreate 
+            {
+                .textAndButton 
+                {
+                    width:95%;
+                    h1 
+                    {
+                        font-size:51px;
+                    }
+                }
+            }
+        }
+        .verticalTop 
+        {
+            .oxygen 
+            {
+                .oxy
+                {
+                    font-size:38px;
+                }
+                .the
+                {
+                    font-size:38px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:376px) and (max-width:475px)
+{
+    .header 
+    {
+        .verticalBottom 
+        {
+            .socialBottom 
+            {
+                display:block;
+            }
+        }
+        .verticalMiddle 
+        {
+            .social 
+            {
+                display:none;
+            }
+            .weCreate 
+            {
+                .textAndButton 
+                {
+                    width:95%;
+                    h1 
+                    {
+                        font-size:68px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:476px) and (max-width:600px)
+{
+    .header 
+    {
+        .verticalBottom 
+        {
+            .socialBottom 
+            {
+                display:block;
+            }
+        }
+        .verticalMiddle 
+        {
+            .social 
+            {
+                display:none;
+            }
+            .weCreate 
+            {
+                .textAndButton 
+                {
+                    width:95%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:601px) and (max-width:800px)
+{
+    .header 
+    {
+        .verticalBottom 
+        {
+            .socialBottom 
+            {
+                display:block;
+            }
+        }
+        .verticalMiddle 
+        {
+            .social 
+            {
+                display:none;
+            }
+            .weCreate 
+            {
+                .textAndButton 
+                {
+                    width:75%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:801px) and (max-width:975px)
+{
+    .header 
+    {
+        .verticalBottom 
+        {
+            .socialBottom 
+            {
+                display:block;
+            }
+        }
+        .verticalMiddle 
+        {
+            .social 
+            {
+                display:none;
+            }
+            .weCreate 
+            {
+                .textAndButton 
+                {
+                    width:55%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:976px) and (max-width:1275px)
+{
+    .header 
+    {
+        .verticalMiddle 
+        {
+            .weCreate 
+            {
+                .textAndButton 
+                {
+                    width:45%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1276px) and (max-width:1775px)
+{
+    .header 
+    {
+        .verticalMiddle 
+        {
+            .weCreate 
+            {
+                .textAndButton 
+                {
+                    width:35%;
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width:1921px) and (max-width:2400px)
+{
+    .header 
+    {
+        .verticalBottom
+        {
+            height:176px;
+            .socialBottom
+            {
+                a 
+                {
+                    h4 
+                    {
+                        font-size:32px;
+                        margin:0 0 0 16px;
+                        top:2.5px;
+                    }
+                    img 
+                    {
+                        height:auto;
+                        width:18px;
+                    }
+                }
+            }
+        }
+        .verticalMiddle 
+        {
+            .social 
+            {
+                a 
+                {
+                    margin:0 0 0 40px;
+                    h4 
+                    {
+                        font-size:32px;
+                        margin:0 0 0 16px;
+                        top:2.5px;
+                    }
+                    img 
+                    {
+                        height:auto;
+                        width:18px;
+                    }
+                }
+            }
+            .weCreate 
+            {
+                .textAndButton 
+                {
+                    width:35%;
+                    .button 
+                    {
+                        margin:36px 0 0 0;
+                        a 
+                        {
+                            border-radius:10px;
+                            font-size:31px;
+                            padding:25px 61px 25px 61px;
+                        }
+                    }
+                    h1 
+                    {
+                        font-size:112px;
+                    }
+                }
+            }
+        }
+        .verticalTop
+        {
+            .oxygen 
+            {
+                padding:176px 0 0 0;
+                .oxy 
+                {
+                    font-size:62px;
+                }
+                .the 
+                {
+                    font-size:62px;
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width:2401px) and (max-width:3000px)
+{
+    .header 
+    {
+        .verticalBottom
+        {
+            height:220px;
+            .socialBottom
+            {
+                a 
+                {
+                    h4 
+                    {
+                        font-size:40px;
+                        margin:0 0 0 20px;
+                        top:3.1px;
+                    }
+                    img 
+                    {
+                        height:auto;
+                        width:22px;
+                    }
+                }
+            }
+        }
+        .verticalMiddle 
+        {
+            .social 
+            {
+                a 
+                {
+                    margin:0 0 0 50px;
+                    h4 
+                    {
+                        font-size:40px;
+                        margin:0 0 0 20px;
+                        top:3.1px;
+                    }
+                    img 
+                    {
+                        height:auto;
+                        width:22px;
+                    }
+                }
+            }
+            .weCreate 
+            {
+                .textAndButton 
+                {
+                    width:35%;
+                    .button 
+                    {
+                        margin:45px 0 0 0;
+                        a 
+                        {
+                            border-radius:12.5px;
+                            font-size:38px;
+                            padding:31px 76px 31px 76px;
+                        }
+                    }
+                    h1 
+                    {
+                        font-size:140px;
+                    }
+                }
+            }
+        }
+        .verticalTop
+        {
+            .oxygen 
+            {
+                padding:220px 0 0 0;
+                .oxy 
+                {
+                    font-size:77px;
+                }
+                .the 
+                {
+                    font-size:77px;
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width:3001px) and (max-width:3750px)
+{
+    .header 
+    {
+        .verticalBottom
+        {
+            height:275px;
+            .socialBottom
+            {
+                a 
+                {
+                    h4 
+                    {
+                        font-size:50px;
+                        margin:0 0 0 25px;
+                        top:3.8px;
+                    }
+                    img 
+                    {
+                        height:auto;
+                        width:27px;
+                    }
+                }
+            }
+        }
+        .verticalMiddle 
+        {
+            .social 
+            {
+                a 
+                {
+                    margin:0 0 0 62px;
+                    h4 
+                    {
+                        font-size:50px;
+                        margin:0 0 0 25px;
+                        top:3.8px;
+                    }
+                    img 
+                    {
+                        height:auto;
+                        width:27px;
+                    }
+                }
+            }
+            .weCreate 
+            {
+                .textAndButton 
+                {
+                    width:35%;
+                    .button 
+                    {
+                        margin:56px 0 0 0;
+                        a 
+                        {
+                            border-radius:15.6px;
+                            font-size:47px;
+                            padding:38px 95px 38px 95px;
+                        }
+                    }
+                    h1 
+                    {
+                        font-size:175px;
+                    }
+                }
+            }
+        }
+        .verticalTop
+        {
+            .oxygen 
+            {
+                padding:275px 0 0 0;
+                .oxy 
+                {
+                    font-size:96px;
+                }
+                .the 
+                {
+                    font-size:96px;
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width:3751px)
+{
+    .header 
+    {
+        .verticalBottom
+        {
+            height:343px;
+            .socialBottom
+            {
+                a 
+                {
+                    h4 
+                    {
+                        font-size:62px;
+                        margin:0 0 0 31px;
+                        top:4.7px;
+                    }
+                    img 
+                    {
+                        height:auto;
+                        width:33px;
+                    }
+                }
+            }
+        }
+        .verticalMiddle 
+        {
+            .social 
+            {
+                a 
+                {
+                    margin:0 0 0 77px;
+                    h4 
+                    {
+                        font-size:62px;
+                        margin:0 0 0 31px;
+                        top:4.7px;
+                    }
+                    img 
+                    {
+                        height:auto;
+                        width:33px;
+                    }
+                }
+            }
+            .weCreate 
+            {
+                .textAndButton 
+                {
+                    width:35%;
+                    .button 
+                    {
+                        margin:70px 0 0 0;
+                        a 
+                        {
+                            border-radius:19.5px;
+                            font-size:58px;
+                            padding:47px 118px 47px 118px;
+                        }
+                    }
+                    h1 
+                    {
+                        font-size:218px;
+                    }
+                }
+            }
+        }
+        .verticalTop
+        {
+            .oxygen 
+            {
+                padding:343px 0 0 0;
+                .oxy 
+                {
+                    font-size:120px;
+                }
+                .the 
+                {
+                    font-size:120px;
+                }
+            }
+        }
+    }
+}
