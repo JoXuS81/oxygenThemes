@@ -1,0 +1,81 @@
+footer 
+{
+    background:$footerBackground;
+    height:311px;
+    .content 
+    {
+        .left 
+        {
+            .imgContainer 
+            {
+                margin:0 0 0 12.09%;
+                img 
+                {
+                    //cursor:pointer;
+                    height:auto;
+                    width:125px;
+                }
+            }
+        }
+        .right 
+        {
+            background:$footerBackground;
+            .imgsContainer 
+            {
+                .additionalContainer 
+                {
+                    margin:0 12.09% 0 0;
+                    a 
+                    {
+                        text-decoration:none;
+                        .fb 
+                        {
+                            cursor:pointer;
+                            height:auto;
+                            margin:0 39px 0 0;
+                            width:50px;
+                        }
+                    }
+                    a 
+                    {
+                        text-decoration:none;
+                        .yt 
+                        {
+                            cursor:pointer;
+                            height:auto;
+                            width:71px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:575px)
+{
+    footer 
+    {
+        .content 
+        {
+            .left 
+            {
+                .imgContainer 
+                {
+                    margin:0;
+                }
+            }
+            .right 
+            {
+                .imgsContainer 
+                {
+                    .additionalContainer 
+                    {
+                        margin:0;
+                    }
+                }
+            }
+        }
+    }
+}

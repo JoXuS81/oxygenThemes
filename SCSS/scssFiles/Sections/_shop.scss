@@ -1,0 +1,883 @@
+.shop 
+{
+    background:$shopBackground;
+    padding:0 0 75px 0;
+    width:100%;
+    .shopContainer 
+    {
+        width:100%;
+        .content
+        {
+            width:100%;
+            .bottom 
+            {
+                margin:164px 0 0 0;
+                width:100%;
+                .bottomContent 
+                {
+                    width:81%;
+                    .headingContainer 
+                    {
+                        .heading 
+                        {
+                            h2 
+                            {
+                                color:$white;
+                                font-size:45px;
+                                width:100%;
+                            }
+                        }
+                    }
+                    .products 
+                    {
+                        margin:37px;
+                        width:100%;
+                        .productsContainer 
+                        {
+                            width:100%;
+                            .block 
+                            {
+                                .blockContainer 
+                                {
+                                    border:12.5px solid transparent;
+                                    width:100%;
+                                    .imgContainer 
+                                    {
+                                        img 
+                                        {
+                                            cursor:pointer;
+                                            height:auto;
+                                            width:500px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .topArea 
+            {
+                .top 
+                {
+                    margin:100px 0 0 0;
+                    width:86%;
+                    .left 
+                    {
+                        width:55%;
+                        .imgContainer 
+                        {
+                            width:100%;
+                        }
+                        .smallImagesContainer 
+                        {
+                            margin:10px 0 0 0;
+                            position:relative;
+                            right:15px;
+                            top:15px;
+                            width:calc(100% + 30px);
+                            .smallImg 
+                            {
+                                .smallImgContainer 
+                                {
+                                    border:15px solid transparent;
+                                    width:100%;
+                                }
+                            }
+                        }
+                    }
+                    .right 
+                    {
+                        width:45%;
+                        .rightContainer 
+                        {
+                            margin:0 0 0 6.4%;
+                            .buttonArea 
+                            {
+                                margin:20px 0 0 0;
+                                button 
+                                {
+                                    background:$white;
+                                    border:none;
+                                    border-radius:9px;
+                                    font-family:tekoRegular;
+                                    font-size:25px;
+                                    height:75px;
+                                    width:29%;
+                                }
+                            }
+                            .category 
+                            {
+                                margin:77px 0 0 0;
+                                h2 
+                                {
+                                    color:$white;
+                                    display:inline-block;
+                                    text-align:initial;
+                                    width:initial;
+                                }
+                            }
+                            .heading 
+                            {
+                                h2 
+                                {
+                                    color:$white;
+                                    font-size:55px;
+                                    text-align:initial;
+                                    width:initial;
+                                }
+                            }
+                            .price 
+                            {
+                                display:inline-block;
+                                margin:5px 0 0 0;
+                                h2 
+                                {
+                                    color:$white;
+                                    text-align:initial;
+                                    width:initial;
+                                }
+                            }
+                            .tags
+                            {
+                                margin:5px 0 0 0;
+                                h2 
+                                {
+                                    color:$white;
+                                    display:inline-block;
+                                    text-align:initial;
+                                    width:initial;
+                                }
+                            }
+                            .text 
+                            {
+                                margin:20px 0 0 0;
+                                h4 
+                                {
+                                    color:$white;
+                                    font-size:25px;
+                                    margin-left:0;
+                                    text-align:justify;
+                                    top:0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:575px)
+{
+    .shop 
+    {
+        .shopContainer 
+        {
+            .content 
+            {
+                .topArea 
+                {
+                    .top
+                    {
+                        .left 
+                        {
+                            width:100%;
+                        }
+                        .right
+                        {
+                            margin:50px 0 0 0;
+                            width:100%;
+                            .rightContainer
+                            {
+                                margin:0;
+                                .buttonArea 
+                                {
+                                    display:flex;
+                                    justify-content:center;
+                                    button 
+                                    {
+                                        width:60%;
+                                    }
+                                }
+                                .category 
+                                {
+                                    h2 
+                                    {
+                                        font-size:27px;
+                                    }
+                                }
+                                .heading 
+                                {
+                                    h2 
+                                    {
+                                        font-size:40px;
+                                        text-align:center;
+                                    }
+                                }
+                                .price 
+                                {
+                                    display:flex;
+                                    justify-content:center;
+                                    h2 
+                                    {
+                                        font-size:30px;
+                                        text-align:center;
+                                    }
+                                }
+                                .tags 
+                                {
+                                    h2 
+                                    {
+                                        font-size:27px;
+                                    }
+                                }
+                                .text 
+                                {
+                                    h4 
+                                    {
+                                        font-size:20px;
+                                        text-align:center;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:576px) and (max-width:767px)
+{
+    .shop 
+    {
+        .shopContainer 
+        {
+            .content 
+            {
+                .topArea 
+                {
+                    .top
+                    {
+                        .left 
+                        {
+                            width:100%;
+                        }
+                        .right
+                        {
+                            margin:50px 0 0 0;
+                            width:100%;
+                            .rightContainer
+                            {
+                                margin:0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:768px) and (max-width:1199px)
+{
+    .shop 
+    {
+        .shopContainer 
+        {
+            .content 
+            {
+                .topArea 
+                {
+                    .top
+                    {
+                        .left 
+                        {
+                            width:100%;
+                        }
+                        .right
+                        {
+                            margin:50px 0 0 0;
+                            width:100%;
+                            .rightContainer
+                            {
+                                margin:0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1200px) and (max-width:1399px)
+{
+    .shop 
+    {
+        .shopContainer 
+        {
+            .content 
+            {
+                .topArea 
+                {
+                    .top
+                    {
+                        .left 
+                        {
+                            width:100%;
+                        }
+                        .right
+                        {
+                            margin:50px 0 0 0;
+                            width:100%;
+                            .rightContainer
+                            {
+                                margin:0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1921px) and (max-width:2400px)
+{
+    .shop 
+    {
+        padding:0 0 93px 0;
+        .shopContainer 
+        {
+            .content
+            {
+                .bottom 
+                {
+                    margin:205px 0 0 0;
+                    .bottomContent 
+                    {
+                        .headingContainer 
+                        {
+                            .heading 
+                            {
+                                h2 
+                                {
+                                    font-size:56px;
+                                }
+                            }
+                        }
+                        .products 
+                        {
+                            margin:46px;
+                            .productsContainer 
+                            {
+                                .block 
+                                {
+                                    .blockContainer 
+                                    {
+                                        border:15.6px solid transparent;
+                                        .imgContainer 
+                                        {
+                                            img 
+                                            {
+                                                height:auto;
+                                                width:625px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .topArea 
+                {
+                    .top 
+                    {
+                        margin:125px 0 0 0;
+                        .left 
+                        {
+                            .smallImagesContainer 
+                            {
+                                margin:12.5px 0 0 0;
+                                right:18px;
+                                top:18px;
+                                width:calc(100% + 37px);
+                                .smallImg 
+                                {
+                                    .smallImgContainer 
+                                    {
+                                        border:18px solid transparent;
+                                    }
+                                }
+                            }
+                        }
+                        .right 
+                        {
+                            .rightContainer 
+                            {
+                                .buttonArea 
+                                {
+                                    margin:25px 0 0 0;
+                                    button 
+                                    {
+                                        border-radius:11px;
+                                        font-size:31px;
+                                        height:93px;
+                                    }
+                                }
+                                .category 
+                                {
+                                    margin:96px 0 0 0;
+                                    h2 
+                                    {
+                                        font-size:43px;
+                                    }
+                                }
+                                .heading 
+                                {
+                                    h2 
+                                    {
+                                        font-size:68px;
+                                    }
+                                }
+                                .price 
+                                {
+                                    margin:6.2px 0 0 0;
+                                    h2 
+                                    {
+                                        font-size:37px;
+                                    }
+                                }
+                                .tags
+                                {
+                                    margin:6.2px 0 0 0;
+                                    h2 
+                                    {
+                                        font-size:43px;
+                                    }
+                                }
+                                .text 
+                                {
+                                    margin:25px 0 0 0;
+                                    h4 
+                                    {
+                                        font-size:31px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:2401px) and (max-width:3000px)
+{
+    .shop 
+    {
+        padding:0 0 116px 0;
+        .shopContainer 
+        {
+            .content
+            {
+                .bottom 
+                {
+                    margin:256px 0 0 0;
+                    .bottomContent 
+                    {
+                        .headingContainer 
+                        {
+                            .heading 
+                            {
+                                h2 
+                                {
+                                    font-size:70px;
+                                }
+                            }
+                        }
+                        .products 
+                        {
+                            margin:57px;
+                            .productsContainer 
+                            {
+                                .block 
+                                {
+                                    .blockContainer 
+                                    {
+                                        border:19.5px solid transparent;
+                                        .imgContainer 
+                                        {
+                                            img 
+                                            {
+                                                height:auto;
+                                                width:781px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .topArea 
+                {
+                    .top 
+                    {
+                        margin:156px 0 0 0;
+                        .left 
+                        {
+                            .smallImagesContainer 
+                            {
+                                margin:15.6px 0 0 0;
+                                right:22px;
+                                top:22px;
+                                width:calc(100% + 46px);
+                                .smallImg 
+                                {
+                                    .smallImgContainer 
+                                    {
+                                        border:22px solid transparent;
+                                    }
+                                }
+                            }
+                        }
+                        .right 
+                        {
+                            .rightContainer 
+                            {
+                                .buttonArea 
+                                {
+                                    margin:31px 0 0 0;
+                                    button 
+                                    {
+                                        border-radius:13px;
+                                        font-size:38px;
+                                        height:116px;
+                                    }
+                                }
+                                .category 
+                                {
+                                    margin:120px 0 0 0;
+                                    h2 
+                                    {
+                                        font-size:53px;
+                                    }
+                                }
+                                .heading 
+                                {
+                                    h2 
+                                    {
+                                        font-size:85px;
+                                    }
+                                }
+                                .price 
+                                {
+                                    margin:7.7px 0 0 0;
+                                    h2 
+                                    {
+                                        font-size:46px;
+                                    }
+                                }
+                                .tags
+                                {
+                                    margin:7.7px 0 0 0;
+                                    h2 
+                                    {
+                                        font-size:53px;
+                                    }
+                                }
+                                .text 
+                                {
+                                    margin:31px 0 0 0;
+                                    h4 
+                                    {
+                                        font-size:38px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:3001px) and (max-width:3750px)
+{
+    .shop 
+    {
+        padding:0 0 145px 0;
+        .shopContainer 
+        {
+            .content
+            {
+                .bottom 
+                {
+                    margin:320px 0 0 0;
+                    .bottomContent 
+                    {
+                        .headingContainer 
+                        {
+                            .heading 
+                            {
+                                h2 
+                                {
+                                    font-size:87px;
+                                }
+                            }
+                        }
+                        .products 
+                        {
+                            margin:71px;
+                            .productsContainer 
+                            {
+                                .block 
+                                {
+                                    .blockContainer 
+                                    {
+                                        border:24.3px solid transparent;
+                                        .imgContainer 
+                                        {
+                                            img 
+                                            {
+                                                height:auto;
+                                                width:976px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .topArea 
+                {
+                    .top 
+                    {
+                        margin:195px 0 0 0;
+                        .left 
+                        {
+                            .smallImagesContainer 
+                            {
+                                margin:19.5px 0 0 0;
+                                right:27px;
+                                top:27px;
+                                width:calc(100% + 57px);
+                                .smallImg 
+                                {
+                                    .smallImgContainer 
+                                    {
+                                        border:27px solid transparent;
+                                    }
+                                }
+                            }
+                        }
+                        .right 
+                        {
+                            .rightContainer 
+                            {
+                                .buttonArea 
+                                {
+                                    margin:38px 0 0 0;
+                                    button 
+                                    {
+                                        border-radius:16px;
+                                        font-size:47px;
+                                        height:145px;
+                                    }
+                                }
+                                .category 
+                                {
+                                    margin:150px 0 0 0;
+                                    h2 
+                                    {
+                                        font-size:66px;
+                                    }
+                                }
+                                .heading 
+                                {
+                                    h2 
+                                    {
+                                        font-size:106px;
+                                    }
+                                }
+                                .price 
+                                {
+                                    margin:9.6px 0 0 0;
+                                    h2 
+                                    {
+                                        font-size:57px;
+                                    }
+                                }
+                                .tags
+                                {
+                                    margin:9.6px 0 0 0;
+                                    h2 
+                                    {
+                                        font-size:66px;
+                                    }
+                                }
+                                .text 
+                                {
+                                    margin:38px 0 0 0;
+                                    h4 
+                                    {
+                                        font-size:47px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:3751px)
+{
+    .shop 
+    {
+        padding:0 0 181px 0;
+        .shopContainer 
+        {
+            .content
+            {
+                .bottom 
+                {
+                    margin:400px 0 0 0;
+                    .bottomContent 
+                    {
+                        .headingContainer 
+                        {
+                            .heading 
+                            {
+                                h2 
+                                {
+                                    font-size:108px;
+                                }
+                            }
+                        }
+                        .products 
+                        {
+                            margin:88px;
+                            .productsContainer 
+                            {
+                                .block 
+                                {
+                                    .blockContainer 
+                                    {
+                                        border:30.4px solid transparent;
+                                        .imgContainer 
+                                        {
+                                            img 
+                                            {
+                                                height:auto;
+                                                width:1220px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .topArea 
+                {
+                    .top 
+                    {
+                        margin:244px 0 0 0;
+                        .left 
+                        {
+                            .smallImagesContainer 
+                            {
+                                margin:24.3px 0 0 0;
+                                right:33px;
+                                top:33px;
+                                width:calc(100% + 71px);
+                                .smallImg 
+                                {
+                                    .smallImgContainer 
+                                    {
+                                        border:33px solid transparent;
+                                    }
+                                }
+                            }
+                        }
+                        .right 
+                        {
+                            .rightContainer 
+                            {
+                                .buttonArea 
+                                {
+                                    margin:47px 0 0 0;
+                                    button 
+                                    {
+                                        border-radius:20px;
+                                        font-size:58px;
+                                        height:181px;
+                                    }
+                                }
+                                .category 
+                                {
+                                    margin:187px 0 0 0;
+                                    h2 
+                                    {
+                                        font-size:82px;
+                                    }
+                                }
+                                .heading 
+                                {
+                                    h2 
+                                    {
+                                        font-size:132px;
+                                    }
+                                }
+                                .price 
+                                {
+                                    margin:12px 0 0 0;
+                                    h2 
+                                    {
+                                        font-size:71px;
+                                    }
+                                }
+                                .tags
+                                {
+                                    margin:12px 0 0 0;
+                                    h2 
+                                    {
+                                        font-size:82px;
+                                    }
+                                }
+                                .text 
+                                {
+                                    margin:47px 0 0 0;
+                                    h4 
+                                    {
+                                        font-size:58px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

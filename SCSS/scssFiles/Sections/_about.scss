@@ -1,0 +1,1018 @@
+.about 
+{
+    background:$aboutBackground;
+    margin:0;
+    overflow:hidden;
+    padding:0;
+    .content 
+    {
+        margin:0;
+        padding:141px 0 0 0;
+        .bottomLines 
+        {
+            margin:49px 0 0 0;
+            .lineArea 
+            {
+                display:flex;
+                justify-content:center;
+                .line 
+                {
+                    background:$redLight;
+                    height:25px;
+                    width:0.26%;
+                }
+            }
+            .marginArea 
+            {
+                margin:11px 0 0 0;
+            }
+        }
+        .containerAngle 
+        {
+            background:$containerAngleBackground;
+            margin:75px 0 0 0;
+            padding:0;
+            position:relative;
+            z-index:1;
+            &:after
+            {
+              top:0;
+              transform:skewY(5deg);
+              transform-origin:100% 0;
+            }
+            &:after,
+            &:before 
+            {
+              background:inherit;
+              content:'';
+              display:block;
+              height:175px;
+              left:0;
+              position:absolute;
+              right:0;
+              z-index:-1;
+            }
+            &:before
+            {
+              bottom:0;
+              transform:skewY(5deg);
+              transform-origin: 100%;
+            }
+            .block 
+            {
+                margin:0;
+                overflow:hidden;
+                padding:0;
+                .heading 
+                {
+                    align-items:center;
+                    display:flex;
+                    margin:0;
+                    padding:0;
+                    h1 
+                    {
+                        color:$redLight;
+                        display:inline;
+                        font-size:100px;
+                        margin:0;
+                        padding:0;
+                    }
+                    .blockHeading 
+                    {
+                        color:$workflowHeading;
+                        display:block;
+                        font-size:50px;
+                        margin:0;
+                        padding:0;
+                        position:relative;
+                        right:17px;
+                    }
+                }
+                .text 
+                {
+                    margin:21px;
+                    padding:0 0 50px 0;
+                }
+            }
+        }
+        .cuttingEdge 
+        {
+            margin:49px 0 0 0;
+            h1 
+            {
+                font-family:tekoRegular;
+                font-size:45px;
+                margin:0;
+                padding:0;
+                width:29%;
+            }
+        }
+        .ourMission
+        {
+            margin:10px 0 0 0;
+        }
+        .topLines 
+        {
+            .lineArea 
+            {
+                display:flex;
+                justify-content:center;
+                .line 
+                {
+                    background:$redLight;
+                    height:25px;
+                    width:0.26%;
+                }
+            }
+            .marginArea 
+            {
+                margin:11px 0 0 0;
+            }
+        }
+        .workflow 
+        {
+            display:flex;
+            justify-content:end;
+            margin:0 14% 0 0;
+            padding:0;
+            .workflowContent 
+            {
+                h1 
+                {
+                    font-family:tekoRegular;
+                    font-size:75px;
+                    line-height:1;
+                    margin:0;
+                    padding:0;
+                    text-align:initial;
+                    transform:rotate(5deg);
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:250px) 
+{
+    .about 
+    {
+        .content 
+        {
+            .ourMission
+            {
+                h3 
+                {
+                    font-size:18px;
+                    width:95%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:251px) and (max-width:325px) 
+{
+    .about 
+    {
+        .content 
+        {
+            .ourMission
+            {
+                h3 
+                {
+                    font-size:17px;
+                    width:95%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:275px)
+{
+    .about 
+    {
+        .content 
+        {
+            .workflow 
+            {
+                .workflowContent 
+                {
+                    h1 
+                    {
+                        font-size:57px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:300px) 
+{
+    .about 
+    {
+        .content 
+        {
+            .containerAngle 
+            {
+                .block 
+                {
+                    .heading 
+                    {
+                        h1 
+                        {
+                            font-size:57px;
+                        }
+                        .blockHeading 
+                        {
+                            font-size:29px;
+                        }
+                    }
+                }
+            }
+            .cuttingEdge 
+            {
+                h1 
+                {
+                    font-size:26px;
+                    width:95%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:301px) and (max-width:375px) 
+{
+    .about 
+    {
+        .content 
+        {
+            .cuttingEdge 
+            {
+                h1 
+                {
+                    font-size:34px;
+                    width:95%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:326px) and (max-width:425px) 
+{
+    .about 
+    {
+        .content 
+        {
+            .ourMission
+            {
+                h3 
+                {
+                    font-size:18px;
+                    width:95%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:375px)
+{
+    .about 
+    {
+        .content 
+        {
+            .containerAngle 
+            {
+                .block 
+                {
+                    .heading 
+                    {
+                        .blockHeading 
+                        {
+                            font-size:22px;;
+                        }
+                        h1 
+                        {
+                            font-size:43px;
+                        }
+                    }
+                    .text 
+                    {
+                        h2 
+                        {
+                            font-size:21px;
+                            width:95%;
+                        }
+                    }
+                }
+            }
+            .workflow 
+            {
+                display:flex;
+                justify-content:center;
+                width:100%;
+                .workflowContent 
+                {
+                    h1 
+                    {
+                        font-size:43px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:376px) and (max-width:425px) 
+{
+    .about 
+    {
+        .content 
+        {
+            .cuttingEdge 
+            {
+                h1 
+                {
+                    width:95%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:376px) and (max-width:525px)
+{
+    .about 
+    {
+        .content 
+        {
+            .containerAngle 
+            {
+                .block 
+                {
+                    .heading 
+                    {
+                        .blockHeading 
+                        {
+                            font-size:29px;;
+                        }
+                        h1 
+                        {
+                            font-size:57px;
+                        }
+                    }
+                    .text 
+                    {
+                        h2 
+                        {
+                            font-size:27px;
+                            width:100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:400px) 
+{
+    .about 
+    {
+        .content 
+        {
+            .bottomLines 
+            {
+                .lineArea 
+                {
+                    .line 
+                    {
+                        width:5px;
+                    }
+                }
+            }
+            .topLines 
+            {
+                .lineArea 
+                {
+                    .line 
+                    {
+                        width:5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:426px) and (max-width:525px) 
+{
+    .about 
+    {
+        .content 
+        {
+            .cuttingEdge 
+            {
+                h1 
+                {
+                    width:87%;
+                }
+            }
+            .ourMission
+            {
+                h3 
+                {
+                    font-size:23px;
+                    width:95%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:526px) and (max-width:575px) 
+{
+    .about 
+    {
+        .content 
+        {
+            .ourMission
+            {
+                h3 
+                {
+                    width:95%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:526px) and (max-width:650px) 
+{
+    .about 
+    {
+        .content 
+        {
+            .cuttingEdge 
+            {
+                h1 
+                {
+                    width:70%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:526px) and (max-width:775px)
+{
+    .about 
+    {
+        .content 
+        {
+            .containerAngle 
+            {
+                .block 
+                {
+                    .text 
+                    {
+                        h2 
+                        {
+                            width:87%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:576px) and (max-width:725px) 
+{
+    .about 
+    {
+        .content 
+        {
+            .ourMission
+            {
+                h3 
+                {
+                    width:87%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:651px) and (max-width:800px) 
+{
+    .about 
+    {
+        .content 
+        {
+            .cuttingEdge 
+            {
+                h1 
+                {
+                    width:56%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:726px) and (max-width:900px) 
+{
+    .about 
+    {
+        .content 
+        {
+            .ourMission
+            {
+                h3 
+                {
+                    width:70%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:776px) and (max-width:1200px)
+{
+    .about 
+    {
+        .content 
+        {
+            .containerAngle 
+            {
+                .block 
+                {
+                    .text 
+                    {
+                        h2 
+                        {
+                            width:56%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:801px) and (max-width:1000px) 
+{
+    .about 
+    {
+        .content 
+        {
+            .cuttingEdge 
+            {
+                h1 
+                {
+                    width:45%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:901px) and (max-width:1125px) 
+{
+    .about 
+    {
+        .content 
+        {
+            .ourMission
+            {
+                h3 
+                {
+                    width:56%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1001px) and (max-width:1225px) 
+{
+    .about 
+    {
+        .content 
+        {
+            .cuttingEdge 
+            {
+                h1 
+                {
+                    width:36%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1126px) and (max-width:1400px) 
+{
+    .about 
+    {
+        .content 
+        {
+            .ourMission
+            {
+                h3 
+                {
+                    width:45%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:1400px)
+{
+    .about 
+    {
+        .content 
+        {
+            .workflow 
+            {
+                display:flex;
+                justify-content:center;
+                margin:49px 0 0 0;
+            }
+        }
+    }
+}
+
+
+@media (min-width:1921px) and (max-width:2400px)
+{
+    .about 
+    {
+        .content 
+        {
+            padding:176px 0 0 0;
+            .bottomLines 
+            {
+                .lineArea 
+                {
+                    .line 
+                    {
+                        height:31px;
+                    }
+                }
+                .marginArea 
+                {
+                    margin:13px 0 0 0;
+                }
+            }
+            .containerAngle 
+            {
+                margin:93px 0 0 0;
+                &:after,
+                &:before
+                {
+                height:218px;
+                }
+                .block 
+                {
+                    .heading 
+                    {
+                        h1 
+                        {
+                            font-size:125px;
+                        }
+                        .blockHeading 
+                        {
+                            font-size:62px;
+                            right:21px;
+                        }
+                    }
+                    .text 
+                    {
+                        margin:26px;
+                        padding:0 0 62px 0;
+                    }
+                }
+            }
+            .cuttingEdge 
+            {
+                margin:61px 0 0 0;
+                h1 
+                {
+                    font-size:56px;
+                }
+            }
+            .topLines 
+            {
+                .lineArea 
+                {
+                    .line 
+                    {
+                        height:31px;
+                    }
+                }
+                .marginArea 
+                {
+                    margin:13px 0 0 0;
+                }
+            }
+            .workflow 
+            {
+                .workflowContent 
+                {
+                    h1 
+                    {
+                        font-size:93px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:2401px) and (max-width:3000px)
+{
+    .about 
+    {
+        .content 
+        {
+            padding:220px 0 0 0;
+            .bottomLines 
+            {
+                .lineArea 
+                {
+                    .line 
+                    {
+                        height:38px;
+                    }
+                }
+                .marginArea 
+                {
+                    margin:16px 0 0 0;
+                }
+            }
+            .containerAngle 
+            {
+                margin:116px 0 0 0;
+                &:before
+                {
+                    height:272px;
+                }
+                .block 
+                {
+                    .heading 
+                    {
+                        h1 
+                        {
+                            font-size:156px;
+                        }
+                        .blockHeading 
+                        {
+                            font-size:77px;
+                            right:26px;
+                        }
+                    }
+                    .text 
+                    {
+                        margin:32px;
+                        padding:0 0 77px 0;
+                    }
+                }
+            }
+            .cuttingEdge 
+            {
+                margin:76px 0 0 0;
+                h1 
+                {
+                    font-size:70px;
+                }
+            }
+            .topLines 
+            {
+                .lineArea 
+                {
+                    .line 
+                    {
+                        height:38px;
+                    }
+                }
+                .marginArea 
+                {
+                    margin:16px 0 0 0;
+                }
+            }
+            .workflow 
+            {
+                .workflowContent 
+                {
+                    h1 
+                    {
+                        font-size:116px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:3001px) and (max-width:3750px)
+{
+    .about 
+    {
+        .content 
+        {
+            padding:275px 0 0 0;
+            .bottomLines 
+            {
+                .lineArea 
+                {
+                    .line 
+                    {
+                        height:47px;
+                    }
+                }
+                .marginArea 
+                {
+                    margin:20px 0 0 0;
+                }
+            }
+            .containerAngle 
+            {
+                margin:145px 0 0 0;
+                &:before
+                {
+                    height:340px;
+                }
+                .block 
+                {
+                    .heading 
+                    {
+                        h1 
+                        {
+                            font-size:195px;
+                        }
+                        .blockHeading 
+                        {
+                            font-size:96px;
+                            right:32px;
+                        }
+                    }
+                    .text 
+                    {
+                        margin:40px;
+                        padding:0 0 96px 0;
+                    }
+                }
+            }
+            .cuttingEdge 
+            {
+                margin:95px 0 0 0;
+                h1 
+                {
+                    font-size:87px;
+                }
+            }
+            .topLines 
+            {
+                .lineArea 
+                {
+                    .line 
+                    {
+                        height:47px;
+                    }
+                }
+                .marginArea 
+                {
+                    margin:20px 0 0 0;
+                }
+            }
+            .workflow 
+            {
+                .workflowContent 
+                {
+                    h1 
+                    {
+                        font-size:145px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:3751px)
+{
+    .about 
+    {
+        .content 
+        {
+            padding:343px 0 0 0;
+            .bottomLines 
+            {
+                .lineArea 
+                {
+                    .line 
+                    {
+                        height:58px;
+                    }
+                }
+                .marginArea 
+                {
+                    margin:25px 0 0 0;
+                }
+            }
+            .containerAngle 
+            {
+                margin:181px 0 0 0;
+                &:before
+                {
+                    height:340px;
+                }
+                .block 
+                {
+                    .heading 
+                    {
+                        h1 
+                        {
+                            font-size:243px;
+                        }
+                        .blockHeading 
+                        {
+                            font-size:120px;
+                            right:40px;
+                        }
+                    }
+                    .text 
+                    {
+                        margin:50px;
+                        padding:0 0 120px 0;
+                    }
+                }
+            }
+            .cuttingEdge 
+            {
+                margin:118px 0 0 0;
+                h1 
+                {
+                    font-size:108px;
+                }
+            }
+            .topLines 
+            {
+                .lineArea 
+                {
+                    .line 
+                    {
+                        height:58px;
+                    }
+                }
+                .marginArea 
+                {
+                    margin:25px 0 0 0;
+                }
+            }
+            .workflow 
+            {
+                .workflowContent 
+                {
+                    h1 
+                    {
+                        font-size:181px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,1497 @@
+/*
+TABLE OF CONTENTS
+*****************
+*/
+
+
+.header 
+{
+    background:url("../../../Images/Header/headerBackgroundSix.png");
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    height:100vh;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    -webkit-background-size:cover;
+    width:100%;
+    .hambMenu 
+    {
+        background:$hamburgerBackground;
+        height:100%;
+        position:fixed;
+        right:-350px;
+        top:0;
+        width:350px;
+        z-index:2;
+        .links 
+        {
+            left:50%;
+            margin:0;
+            padding:0;
+            position:absolute;
+            top:50%;
+            transform:translate(-50%, -50%);
+            ul 
+            {
+                list-style-type:none;
+                margin:0;
+                padding:0;
+                li 
+                {
+                    margin:15px;
+                    a 
+                    {
+                        border-radius:0;
+                        color:$grey;
+                        display:inline-block;
+                        font-family:fredokaRegular;
+                        font-size:20px;
+                        text-align:center;
+                        text-decoration:none;
+                        &:hover 
+                        {
+                            color:$white;
+                        }
+                    }
+                }
+            }
+        }
+        .logoArea 
+        {
+            .logo 
+            {
+                display:inline-block;
+                h2
+                {
+                    cursor:pointer;
+                    display:inline-block;
+                    font-family:luckiestGuyRegular;
+                    font-size:0px;
+                    margin:100px 0 0 0;
+                    padding:0;
+                    position:relative;
+                    text-align:initial;
+                    width:initial;
+                    z-index:2;
+                    .oxygen 
+                    {
+                        color:$redLight;
+                        display:inline-block;
+                        font-size:35px;
+                    }
+                    .themes 
+                    {
+                        color:$grey;
+                        display:inline-block;
+                        font-size:35px;
+                    }
+                }
+            }
+        }
+        .text 
+        {
+            margin:15px 0 0 0;
+            h3 
+            {
+                color:$grey;
+                font-size:25px;
+                opacity:100%;
+                width:100%;
+            }
+        }
+    }
+    .mobileMenu 
+    {
+        display:none;
+        right:-100%;
+    }
+    .stickyMenu
+    {
+        left:0;
+        margin:auto;
+        position:fixed;
+        right:0;
+        top:0;
+        width:100%;
+        z-index:5;
+    }
+    .top 
+    {
+        background:$white;
+        .logo 
+        {
+            h2
+            {
+                cursor:pointer;
+                display:inline-block;
+                font-family:luckiestGuyRegular;
+                font-size:0px;
+                margin:0 0 0 75px;
+                padding:25px 0 25px 0;
+                position:relative;
+                text-align:initial;
+                width:initial;
+                z-index:2;
+                img 
+                {
+                    height:auto;
+                    width:45px;
+                }
+            }
+        }
+        .navbarCart 
+        {
+            .navbarCartArea 
+            {
+                height:100%;
+                width:100%;
+                .cart 
+                {
+                    border-left:1px solid $black;
+                    height:100%;
+                    width:130px;
+                    .cartImg 
+                    {
+                        cursor:pointer;
+                        display:inline-block;
+                        position:relative;
+                        z-index:2;
+                    }
+                }
+                .hamburgerArea 
+                {
+                    background:$hamburgerBackground;
+                    height:100%;
+                    margin:0;
+                    padding:0;
+                    position:relative;
+                    width:130px;
+                    z-index:3;
+                    .hamburgerMenu
+                    {
+                        cursor:pointer;
+                        display:inline-flex;
+                        flex-direction:column;
+                        height:25px;
+                        justify-content:space-around;
+                        margin:0;
+                        padding:0;
+                        position:relative;
+                        width:26%;
+                        z-index:2;
+                        .hamburgerLineBottom 
+                        {
+                            background:$white;
+                            height:2px;
+                            position:relative;
+                            transition:all 0.8s;
+                            width:100%;
+                        }
+                        // Middle line
+                        .hamburgerLineMiddle 
+                        {
+                            background:$white;
+                            height:2px;
+                            transition:all 0.8s;
+                            width:100%;
+                        }
+                        // Top line
+                        .hamburgerLineTop 
+                        {
+                            background:$white;
+                            height:2px;
+                            transition:all 0.8s;
+                            width:100%;
+                        }
+                    }
+                }
+                .hamburgerAreaMobile
+                {
+                    background:$redLight;
+                    display:none;
+                    height:100%;
+                    margin:0;
+                    padding:0;
+                    position:relative;
+                    width:130px;
+                    z-index:3;
+                    .hamburgerMenu
+                    {
+                        cursor:pointer;
+                        display:inline-flex;
+                        flex-direction:column;
+                        height:25px;
+                        justify-content:space-around;
+                        margin:0;
+                        padding:0;
+                        position:relative;
+                        width:26%;
+                        z-index:2;
+                        .hamburgerLineBottom 
+                        {
+                            background:$white;
+                            height:2px;
+                            position:relative;
+                            transition:all 0.8s;
+                            width:100%;
+                        }
+                        // Middle line
+                        .hamburgerLineMiddle 
+                        {
+                            background:$white;
+                            height:2px;
+                            transition:all 0.8s;
+                            width:100%;
+                        }
+                        // Top line
+                        .hamburgerLineTop 
+                        {
+                            background:$white;
+                            height:2px;
+                            transition:all 0.8s;
+                            width:100%;
+                        }
+                    }
+                }
+                .hamburgerAreaMobile 
+                {
+                    display:none;
+                }
+                ul 
+                {
+                    margin:0;
+                    padding:0;
+                    position:relative;
+                    z-index:2;
+                    li 
+                    {
+                        display:inline-block;
+                        margin:0 55px 0 0;
+                        padding:0;
+                        a 
+                        {
+                            color:$black;
+                            display:inline-block;
+                            font-family:fredokaRegular;
+                            font-size:20px;
+                            margin:0;
+                            padding:0;
+                            text-decoration:none;
+                            &:hover 
+                            {
+                                color:$redLight;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .verticalBottom
+    {
+        bottom:0;
+        display:flex;
+        height:141px;
+        justify-content:center;
+        left:0;
+        position:absolute;
+        width:100%;
+        z-index:1;
+        .socialBottom
+        {
+            display:none;
+            a 
+            {
+                align-items:center;
+                color:$black;
+                display:flex;
+                margin:0;
+                text-decoration:none;
+                h4 
+                {
+                    display:inline-block;
+                    font-family:tekoRegular;
+                    font-size:26px;
+                    margin:0 0 0 13px;
+                    padding:0;
+                    position:relative;
+                    top:2px;
+                }
+                img 
+                {
+                    display:inline;
+                    height:auto;
+                    width:15px;
+                }
+            }
+        }
+    }
+    .verticalMiddle 
+    {
+        height:100%;
+        left:0;
+        position:absolute;
+        top:0;
+        width:100%;
+        z-index:1;
+        .social 
+        {
+            display:inline;
+            left:0;
+            position:absolute;
+            a 
+            {
+                align-items:center;
+                color:$black;
+                display:flex;
+                margin:0 0 0 32px;
+                text-decoration:none;
+                transform:rotate(-90deg);
+                h4 
+                {
+                    display:inline-block;
+                    font-family:tekoRegular;
+                    padding:0;
+                    position:relative;
+                }
+                img 
+                {
+                    display:inline;
+                    height:auto;
+                    width:15px;
+                }
+            }
+        }
+        .weCreate 
+        {
+            .textAndButton 
+            {
+                width:25%;
+                .button 
+                {
+                    margin:29px 0 0 0;
+                    a 
+                    {
+                        background:$redLight;
+                        color:$white;
+                        font-family:carterOneRegular;
+                        padding:20px 49px 20px 49px;
+                        text-decoration:none;
+                        &:hover 
+                        {
+                            background:$headerButtonHover;
+                        }
+                    }
+                }
+                h1 
+                {
+                    color:$headerMiddle;
+                    font-family:carterOneRegular;
+                    font-size:90px;
+                    padding:0;
+                    width:100%;
+                }
+            }
+        }
+    }
+}
+
+
+.changeMenu 
+{
+    .hambMenu
+    {
+        right:0;
+        transition:right 2s;
+    }
+}
+
+
+// Header Change Menu, Header Line Bottom
+.changeMenu .hamburgerLineBottom {
+    transform:rotateZ(405deg) translate(-8px, -6px);
+}
+// Header Change Menu, Header Line Middle
+.changeMenu .hamburgerLineMiddle {
+    opacity:0;
+}
+// Header Change Menu, Header Line Top
+.changeMenu .hamburgerLineTop {
+    transform:rotateZ(-405deg) translate(-8px, 6px);
+}
+
+
+.changeMenuMobile 
+{
+    .mobileMenu 
+    {
+        right:0;
+        transition:right 2s;
+    }
+}
+
+
+.changeMenuMobile .hamburgerLineBottom {
+    transform:rotateZ(405deg) translate(-8px, -6px);
+}
+// Header Change Menu, Header Line Middle
+.changeMenuMobile .hamburgerLineMiddle {
+    opacity:0;
+}
+// Header Change Menu, Header Line Top
+.changeMenuMobile .hamburgerLineTop {
+    transform:rotateZ(-405deg) translate(-8px, 6px);
+}
+
+
+@media (max-height:400px)
+{
+    .header 
+    {
+        .mobileMenu 
+        {
+            .content 
+            {
+                ul 
+                {
+                    li 
+                    {
+                        a 
+                        {
+                            margin:15px;
+                        }
+                    }
+                }
+            }
+        }
+        .verticalBottom 
+        {
+            height:106px;
+        }
+        .verticalMiddle
+        {
+            .weCreate 
+            {
+                .textAndButton 
+                {
+                    .button 
+                    {
+                        display:none !important;
+                    }
+                    h1 
+                    {
+                        display:none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-height:401px) and (max-height:600px)
+{
+    .header 
+    {
+        .verticalMiddle
+        {
+            .weCreate 
+            {
+                .textAndButton 
+                {
+                    .button 
+                    {
+                        display:none !important;
+                    }
+                    h1 
+                    {
+                        display:none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-height:601px) and (max-height:875px)
+{
+    .header 
+    {
+        .verticalMiddle
+        {
+            .weCreate 
+            {
+                .textAndButton 
+                {
+                    h1 
+                    {
+                        display:none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:275px)
+{
+    .header 
+    {
+        .mobileMenu 
+        {
+            background:$hamburgerBackground;
+            display:block;
+            height:100%;
+            position:fixed;
+            top:0;
+            width:100%;
+            z-index:2;
+            .content 
+            {
+                ul 
+                {
+                    display:inline-block;
+                    list-style-type:none;
+                    margin:0;
+                    padding:0;
+                    li 
+                    {
+                        display:block;
+                        margin:0;
+                        padding:0;
+                        a 
+                        {
+                            color:$white;
+                            display:block;
+                            font-family:fredokaRegular;
+                            margin:25px;
+                            padding:0;
+                            text-align:center;
+                            text-decoration:none;
+                        }
+                    }
+                }
+            }
+        }
+        .top 
+        {
+            .logo 
+            {
+                h2 
+                {
+                    margin:0 0 0 25px;
+                }
+            }
+            .navbarCart 
+            {
+                .navbarCartArea 
+                {
+                    .cart 
+                    {
+                        display:none !important;
+                    }
+                    .hamburgerArea 
+                    {
+                        display:none !important;
+                    }
+                    .hamburgerAreaMobile 
+                    {
+                        display:block;
+                    }
+                    ul 
+                    {
+                        display:none !important;
+                    }
+                }
+            }
+        }
+        .verticalBottom 
+        {
+            .socialBottom 
+            {
+                display:block;
+            }
+        }
+        .verticalMiddle 
+        {
+            .social 
+            {
+                display:none;
+            }
+            .weCreate 
+            {
+                .textAndButton 
+                {
+                    width:95%;
+                    .button 
+                    {
+                        margin:22px 0 0 0;
+                        a 
+                        {
+                            border-radius:6px;
+                            font-size:19px;
+                            padding:15px 37px 15px 37px;
+                        }
+                    }
+                    h1 
+                    {
+                        font-size:38px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:276px) and (max-width:375px)
+{
+    .header 
+    {
+        .mobileMenu 
+        {
+            background:$hamburgerBackground;
+            display:block;
+            height:100%;
+            position:fixed;
+            top:0;
+            width:100%;
+            z-index:2;
+            .content 
+            {
+                ul 
+                {
+                    display:inline-block;
+                    list-style-type:none;
+                    margin:0;
+                    padding:0;
+                    li 
+                    {
+                        display:block;
+                        margin:0;
+                        padding:0;
+                        a 
+                        {
+                            color:$white;
+                            display:block;
+                            font-family:fredokaRegular;
+                            margin:25px;
+                            padding:0;
+                            text-align:center;
+                            text-decoration:none;
+                        }
+                    }
+                }
+            }
+        }
+        .top 
+        {
+            .logo 
+            {
+                h2 
+                {
+                    margin:0 0 0 25px;
+                }
+            }
+            .navbarCart 
+            {
+                .navbarCartArea 
+                {
+                    .cart 
+                    {
+                        display:none !important;
+                    }
+                    .hamburgerArea 
+                    {
+                        display:none !important;
+                    }
+                    .hamburgerAreaMobile 
+                    {
+                        display:block;
+                    }
+                    ul 
+                    {
+                        display:none !important;
+                    }
+                }
+            }
+        }
+        .verticalBottom 
+        {
+            .socialBottom 
+            {
+                display:block;
+            }
+        }
+        .verticalMiddle 
+        {
+            .social 
+            {
+                display:none;
+            }
+            .weCreate 
+            {
+                .textAndButton 
+                {
+                    width:95%;
+                    h1 
+                    {
+                        font-size:51px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:376px) and (max-width:475px)
+{
+    .header 
+    {
+        .mobileMenu 
+        {
+            background:$hamburgerBackground;
+            display:block;
+            height:100%;
+            position:fixed;
+            top:0;
+            width:100%;
+            z-index:2;
+            .content 
+            {
+                ul 
+                {
+                    display:inline-block;
+                    list-style-type:none;
+                    margin:0;
+                    padding:0;
+                    li 
+                    {
+                        display:block;
+                        margin:0;
+                        padding:0;
+                        a 
+                        {
+                            color:$white;
+                            display:block;
+                            font-family:fredokaRegular;
+                            margin:25px;
+                            padding:0;
+                            text-align:center;
+                            text-decoration:none;
+                        }
+                    }
+                }
+            }
+        }
+        .top 
+        {
+            .navbarCart 
+            {
+                .navbarCartArea 
+                {
+                    .hamburgerArea 
+                    {
+                        display:none !important;
+                    }
+                    .hamburgerAreaMobile 
+                    {
+                        display:block;
+                    }
+                    ul 
+                    {
+                        display:none !important;
+                    }
+                }
+            }
+        }
+        .verticalBottom 
+        {
+            .socialBottom 
+            {
+                display:block;
+            }
+        }
+        .verticalMiddle 
+        {
+            .social 
+            {
+                display:none;
+            }
+            .weCreate 
+            {
+                .textAndButton 
+                {
+                    width:95%;
+                    h1 
+                    {
+                        font-size:68px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:476px) and (max-width:600px)
+{
+    .header 
+    {
+        .mobileMenu 
+        {
+            background:$hamburgerBackground;
+            display:block;
+            height:100%;
+            position:fixed;
+            top:0;
+            width:100%;
+            z-index:2;
+            .content 
+            {
+                ul 
+                {
+                    display:inline-block;
+                    list-style-type:none;
+                    margin:0;
+                    padding:0;
+                    li 
+                    {
+                        display:block;
+                        margin:0;
+                        padding:0;
+                        a 
+                        {
+                            color:$white;
+                            display:block;
+                            font-family:fredokaRegular;
+                            margin:25px;
+                            padding:0;
+                            text-align:center;
+                            text-decoration:none;
+                        }
+                    }
+                }
+            }
+        }
+        .top 
+        {
+            .navbarCart 
+            {
+                .navbarCartArea 
+                {
+                    .hamburgerArea 
+                    {
+                        display:none !important;
+                    }
+                    .hamburgerAreaMobile 
+                    {
+                        display:block;
+                    }
+                    ul 
+                    {
+                        display:none !important;
+                    }
+                }
+            }
+        }
+        .verticalBottom 
+        {
+            .socialBottom 
+            {
+                display:block;
+            }
+        }
+        .verticalMiddle 
+        {
+            .social 
+            {
+                display:none;
+            }
+            .weCreate 
+            {
+                .textAndButton 
+                {
+                    width:95%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:601px) and (max-width:800px)
+{
+    .header 
+    {
+        .mobileMenu 
+        {
+            background:$hamburgerBackground;
+            display:block;
+            height:100%;
+            position:fixed;
+            top:0;
+            width:100%;
+            z-index:2;
+            .content 
+            {
+                ul 
+                {
+                    display:inline-block;
+                    list-style-type:none;
+                    margin:0;
+                    padding:0;
+                    li 
+                    {
+                        display:block;
+                        margin:0;
+                        padding:0;
+                        a 
+                        {
+                            color:$white;
+                            display:block;
+                            font-family:fredokaRegular;
+                            margin:25px;
+                            padding:0;
+                            text-align:center;
+                            text-decoration:none;
+                        }
+                    }
+                }
+            }
+        }
+        .top 
+        {
+            .navbarCart 
+            {
+                .navbarCartArea 
+                {
+                    .hamburgerArea 
+                    {
+                        display:none !important;
+                    }
+                    .hamburgerAreaMobile 
+                    {
+                        display:block;
+                    }
+                    ul 
+                    {
+                        display:none !important;
+                    }
+                }
+            }
+        }
+        .verticalBottom 
+        {
+            .socialBottom 
+            {
+                display:block;
+            }
+        }
+        .verticalMiddle 
+        {
+            .social 
+            {
+                display:none;
+            }
+            .weCreate 
+            {
+                .textAndButton 
+                {
+                    width:75%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:801px) and (max-width:975px)
+{
+    .header 
+    {
+        .mobileMenu 
+        {
+            background:$hamburgerBackground;
+            display:block;
+            height:100%;
+            position:fixed;
+            top:0;
+            width:100%;
+            z-index:2;
+            .content 
+            {
+                ul 
+                {
+                    display:inline-block;
+                    list-style-type:none;
+                    margin:0;
+                    padding:0;
+                    li 
+                    {
+                        display:block;
+                        margin:0;
+                        padding:0;
+                        a 
+                        {
+                            color:$white;
+                            display:block;
+                            font-family:fredokaRegular;
+                            margin:25px;
+                            padding:0;
+                            text-align:center;
+                            text-decoration:none;
+                        }
+                    }
+                }
+            }
+        }
+        .top 
+        {
+            .navbarCart 
+            {
+                .navbarCartArea 
+                {
+                    .hamburgerArea 
+                    {
+                        display:none !important;
+                    }
+                    .hamburgerAreaMobile 
+                    {
+                        display:block;
+                    }
+                    ul 
+                    {
+                        display:none !important;
+                    }
+                }
+            }
+        }
+        .verticalBottom 
+        {
+            .socialBottom 
+            {
+                display:block;
+            }
+        }
+        .verticalMiddle 
+        {
+            .social 
+            {
+                display:none;
+            }
+            .weCreate 
+            {
+                .textAndButton 
+                {
+                    width:55%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:976px) and (max-width:1200px)
+{
+    .header 
+    {
+        .mobileMenu 
+        {
+            background:$hamburgerBackground;
+            display:block;
+            height:100%;
+            position:fixed;
+            top:0;
+            width:100%;
+            z-index:2;
+            .content 
+            {
+                ul 
+                {
+                    display:inline-block;
+                    list-style-type:none;
+                    margin:0;
+                    padding:0;
+                    li 
+                    {
+                        display:block;
+                        margin:0;
+                        padding:0;
+                        a 
+                        {
+                            color:$white;
+                            display:block;
+                            font-family:fredokaRegular;
+                            margin:25px;
+                            padding:0;
+                            text-align:center;
+                            text-decoration:none;
+                        }
+                    }
+                }
+            }
+        }
+        .top 
+        {
+            .navbarCart 
+            {
+                .navbarCartArea 
+                {
+                    .hamburgerArea 
+                    {
+                        display:none !important;
+                    }
+                    .hamburgerAreaMobile 
+                    {
+                        display:block;
+                    }
+                    ul 
+                    {
+                        display:none !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:976px) and (max-width:1275px)
+{
+    .header 
+    {
+        .hambMenu 
+        {
+            .logoArea 
+            {
+                .logo 
+                {
+                    h2 
+                    {
+                        .oxygen
+                        {
+                            font-size:21px;
+                        }
+                        .themes 
+                        {
+                            font-size:21px;
+                        }
+                    }
+                }
+            }
+        }
+        .verticalMiddle 
+        {
+            .weCreate 
+            {
+                .textAndButton 
+                {
+                    width:45%;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1276px) and (max-width:1400px)
+{
+    .header 
+    {
+        .hambMenu 
+        {
+            .logoArea 
+            {
+                .logo 
+                {
+                    h2 
+                    {
+                        .oxygen
+                        {
+                            font-size:27px;
+                        }
+                        .themes 
+                        {
+                            font-size:27px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1276px) and (max-width:1775px)
+{
+    .header 
+    {
+        .verticalMiddle 
+        {
+            .weCreate 
+            {
+                .textAndButton 
+                {
+                    width:35%;
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width:1921px) and (max-width:2400px)
+{
+    .header 
+    {
+        .verticalBottom
+        {
+            height:176px;
+            .socialBottom
+            {
+                a 
+                {
+                    h4 
+                    {
+                        font-size:32px;
+                        margin:0 0 0 16px;
+                        top:2.5px;
+                    }
+                    img 
+                    {
+                        height:auto;
+                        width:18px;
+                    }
+                }
+            }
+        }
+        .verticalMiddle 
+        {
+            .social 
+            {
+                a 
+                {
+                    margin:0 0 0 40px;
+                    img 
+                    {
+                        height:auto;
+                        width:18px;
+                    }
+                }
+            }
+            .weCreate 
+            {
+                .textAndButton 
+                {
+                    width:35%;
+                    .button 
+                    {
+                        margin:36px 0 0 0;
+                        a 
+                        {
+                            padding:25px 61px 25px 61px;
+                        }
+                    }
+                    h1 
+                    {
+                        font-size:112px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width:2401px) and (max-width:3000px)
+{
+    .header 
+    {
+        .verticalBottom
+        {
+            height:220px;
+            .socialBottom
+            {
+                a 
+                {
+                    h4 
+                    {
+                        font-size:40px;
+                        margin:0 0 0 20px;
+                        top:3.1px;
+                    }
+                    img 
+                    {
+                        height:auto;
+                        width:22px;
+                    }
+                }
+            }
+        }
+        .verticalMiddle 
+        {
+            .social 
+            {
+                a 
+                {
+                    margin:0 0 0 50px;
+                    img 
+                    {
+                        height:auto;
+                        width:22px;
+                    }
+                }
+            }
+            .weCreate 
+            {
+                .textAndButton 
+                {
+                    width:35%;
+                    .button 
+                    {
+                        margin:45px 0 0 0;
+                        a 
+                        {
+                            padding:31px 76px 31px 76px;
+                        }
+                    }
+                    h1 
+                    {
+                        font-size:140px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width:3001px) and (max-width:3750px)
+{
+    .header 
+    {
+        .verticalBottom
+        {
+            height:275px;
+            .socialBottom
+            {
+                a 
+                {
+                    h4 
+                    {
+                        font-size:50px;
+                        margin:0 0 0 25px;
+                        top:3.8px;
+                    }
+                    img 
+                    {
+                        height:auto;
+                        width:27px;
+                    }
+                }
+            }
+        }
+        .verticalMiddle 
+        {
+            .social 
+            {
+                a 
+                {
+                    margin:0 0 0 62px;
+                    img 
+                    {
+                        height:auto;
+                        width:27px;
+                    }
+                }
+            }
+            .weCreate 
+            {
+                .textAndButton 
+                {
+                    width:35%;
+                    .button 
+                    {
+                        margin:56px 0 0 0;
+                        a 
+                        {
+                            padding:38px 95px 38px 95px;
+                        }
+                    }
+                    h1 
+                    {
+                        font-size:175px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(min-width:3751px)
+{
+    .header 
+    {
+        .verticalBottom
+        {
+            height:343px;
+            .socialBottom
+            {
+                a 
+                {
+                    h4 
+                    {
+                        font-size:62px;
+                        margin:0 0 0 31px;
+                        top:4.7px;
+                    }
+                    img 
+                    {
+                        height:auto;
+                        width:33px;
+                    }
+                }
+            }
+        }
+        .verticalMiddle 
+        {
+            .social 
+            {
+                a 
+                {
+                    margin:0 0 0 77px;
+                    img 
+                    {
+                        height:auto;
+                        width:33px;
+                    }
+                }
+            }
+            .weCreate 
+            {
+                .textAndButton 
+                {
+                    width:35%;
+                    .button 
+                    {
+                        margin:70px 0 0 0;
+                        a 
+                        {
+                            padding:47px 118px 47px 118px;
+                        }
+                    }
+                    h1 
+                    {
+                        font-size:218px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,377 @@
+/* 
+
+*****************
+TABLE OF CONTENTS
+*****************
+
+- Fonts
+- Mixins
+- Mixins, Larger Screens
+- Variables
+- Body
+ - Included Mixins
+ - Main Container
+  - Imports
+- Media Queries
+
+*/
+
+
+// FONTS
+// Carter One
+@font-face 
+{
+    font-family:"carterOneRegular";
+    src:url("../../../Fonts/carterOne/carterOneRegular.ttf");
+}
+// Fredoka One
+@font-face 
+{
+    font-family:"fredokaRegular";
+    src:url("../../../Fonts/Fredoka/fredokaRegular.ttf");
+}
+// Luckiest Guy
+@font-face 
+{
+    font-family:"luckiestGuyRegular";
+    src:url("../../../Fonts/luckiestGuy/luckiestGuyRegular.ttf");
+}
+// Maven Pro Bold
+@font-face 
+{
+    font-family:"mavenProBold";
+    src:url("../../../Fonts/mavenPro/mavenProBold.ttf");
+}
+// Teko
+@font-face 
+{
+    font-family:"tekoRegular";
+    src:url("../../../Fonts/Teko/tekoRegular.ttf");
+}
+// MIXINS (8 Mixins)
+@mixin a
+{
+    border-radius:8px;
+    font-size:25px;
+}
+@mixin h1
+{
+    font-family:luckiestGuyRegular;
+    font-size:0px;
+    padding:141px 0 0 0;
+    text-align:center;
+}
+@mixin h2 
+{
+    color:$workflowText;
+    font-family:tekoRegular;
+    font-size:35px;
+    text-align:center;
+    width:36%;
+}
+@mixin h3
+{
+    font-family:tekoRegular;
+    font-size:30px;
+    opacity:50%;
+    text-align:center;
+    width:36%;
+}
+@mixin h4
+{
+    display:inline-block;
+    font-family:tekoRegular;
+    font-size:26px;
+    margin:0 0 0 13px;
+    top:2px;
+}
+
+
+// MIXINS (FOR RESOLUTION 1921 - 2400px)
+@mixin a_2400
+{
+    border-radius:10px;
+    font-size:31px;
+}
+@mixin h1_2400
+{
+    padding:176px 0 0 0;
+}
+@mixin h2_2400
+{
+    font-size:43px;
+}
+@mixin h3_2400
+{
+    font-size:37px;
+}
+@mixin h4_2400
+{
+    font-size:32px;
+    margin:0 0 0 16px;
+    top:2.5px;
+}
+
+
+// MIXINS (FOR RESOLUTION 2401 - 3000px)
+@mixin a_3000
+{
+    border-radius:12.5px;
+    font-size:38px;
+}
+@mixin h1_3000
+{
+    padding:220px 0 0 0;
+}
+@mixin h2_3000
+{
+    font-size:53px;
+}
+@mixin h3_3000
+{
+    font-size:46px;
+}
+@mixin h4_3000
+{
+    font-size:40px;
+    margin:0 0 0 20px;
+    top:3.1px;
+}
+
+
+// MIXINS (FOR RESOLUTION 3001 - 3750px)
+@mixin a_3750
+{
+    border-radius:15.6px;
+    font-size:47px;
+}
+@mixin h1_3750
+{
+    padding:275px 0 0 0;
+}
+@mixin h2_3750
+{
+    font-size:66px;
+}
+@mixin h3_3750
+{
+    font-size:57px;
+}
+@mixin h4_3750
+{
+    font-size:50px;
+    margin:0 0 0 25px;
+    top:3.8px;
+}
+
+
+// MIXINS (FOR RESOLUTION 3751 -> ...)
+@mixin a_large
+{
+    border-radius:19.5px;
+    font-size:58px;
+}
+@mixin h1_large
+{
+    padding:343px 0 0 0;
+}
+@mixin h2_large
+{
+    font-size:82px;
+}
+@mixin h3_large
+{
+    font-size:71px;
+}
+@mixin h4_large
+{
+    font-size:62px;
+    margin:0 0 0 31px;
+    top:4.7px;
+}
+
+
+// VARIABLES
+$aboutBackground:#f2f2f2;
+$containerAngleBackground:#313131;
+$black:#000000;
+$footerBackground:#222222;
+$grey:#adadad;
+$hamburgerBackground:#333333;
+$headerButtonHover:#f31c43;
+$headerMiddle:#515151;
+$redLight:#ff5F7d;
+$shopBackground:#2c2c2c;
+$white:#ffffff;
+$whiteRgba:rgba(255, 255, 255, 1);
+$workflowHeading:#dfdfdf;
+$workflowText:#a3a1a1;
+
+
+// BODY
+body 
+{
+    margin:0;
+    padding:0;
+    // MAIN CONTAINER
+    .mainContainer 
+    {
+        margin:0;
+        padding:0;
+        // IMPORTS
+        @import "../Content/section";
+        // INCLUDED MIXINS
+        a
+        {
+            @include a;
+        }
+        h1
+        {
+            @include h1;
+        }
+        h2
+        {
+            @include h2;
+        }
+        h3
+        {
+            @include h3;
+        }
+        h4
+        {
+            @include h4;
+        }
+    }
+}
+
+
+@media (min-width:1921px) and (max-width:2400px)
+{
+    body 
+    {
+        // MAIN CONTAINER
+        .mainContainer 
+        {
+            // INCLUDED MIXINS
+            a
+            {
+                @include a_2400;
+            }
+            h1
+            {
+                @include h1_2400;
+            }
+            h2
+            {
+                @include h2_2400;
+            }
+            h3
+            {
+                @include h3_2400;
+            }
+            h4
+            {
+                @include h4_2400;
+            }
+        }
+    }
+}
+
+
+@media (min-width:2401px) and (max-width:3000px)
+{
+    body 
+    {
+        // MAIN CONTAINER
+        .mainContainer 
+        {
+            // INCLUDED MIXINS
+            a
+            {
+                @include a_3000;
+            }
+            h1
+            {
+                @include h1_3000;
+            }
+            h2
+            {
+                @include h2_3000;
+            }
+            h3
+            {
+                @include h3_3000;
+            }
+            h4
+            {
+                @include h4_3000;
+            }
+        }
+    }
+}
+
+
+@media (min-width:3001px) and (max-width:3750px)
+{
+    body 
+    {
+        // MAIN CONTAINER
+        .mainContainer 
+        {
+            // INCLUDED MIXINS
+            a
+            {
+                @include a_3750;
+            }
+            h1
+            {
+                @include h1_3750;
+            }
+            h2
+            {
+                @include h2_3750;
+            }
+            h3
+            {
+                @include h3_3750;
+            }
+            h4
+            {
+                @include h4_3750;
+            }
+        }
+    }
+}
+
+
+@media (min-width:3751px)
+{
+    body 
+    {
+        // MAIN CONTAINER
+        .mainContainer 
+        {
+            // INCLUDED MIXINS
+            a
+            {
+                @include a_large;
+            }
+            h1
+            {
+                @include h1_large;
+            }
+            h2
+            {
+                @include h2_large;
+            }
+            h3
+            {
+                @include h3_large;
+            }
+            h4
+            {
+                @include h4_large;
+            }
+        }
+    }
+}
